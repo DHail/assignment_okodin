@@ -2,14 +2,14 @@
   "development": {
     "username": "davehail",
     "password": null,
-    "database": "demo_okodin_development",
+    "database": "ok_odin_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "davehail",
     "password": null,
-    "database": "demo_okodin_test",
+    "database": "ok_odin_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

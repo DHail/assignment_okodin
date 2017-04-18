@@ -14,14 +14,9 @@ router.get("/", (req, res) => {
   //   .catch(e => res.status(500).send(e.stack));
 });
 
-router.get("/login", (req, res) => {
-  console.log(req.body)
-  
-  // User.find({})
-  //   .then(users => {
-  //     res.render("users/login", {users});
-  //   })
-  //   .catch(e => res.status(500).send(e.stack));
+router.post("/main", (req, res) => {
+  //find all people, sort by distance ASC
+  res.render("main")
 });
 
 // router.get("/:id", (req, res) => {

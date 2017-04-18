@@ -78,9 +78,7 @@ app.use((req, res, next) => {
 // ----------------------------------------
 var usersRouter = require("./routers/users");
 app.use("/", usersRouter);
-
-var usersRouter = require("./routers/users");
-app.use("/login", usersRouter);
+app.use("/main", usersRouter);
 
 
 // ----------------------------------------
@@ -92,7 +90,7 @@ var expressHandlebars = require('express-handlebars');
 
 var hbs = expressHandlebars.create({
   // helpers: helpers.registered,
-  partialsDir: '/views/partials/',
+  partialsDir: 'views/',
   defaultLayout: 'application'
 });
 
